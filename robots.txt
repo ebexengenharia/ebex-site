@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://ebexengenharia.github.io/ebex-site/sitemap.xml

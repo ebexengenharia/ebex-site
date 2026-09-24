@@ -12,11 +12,11 @@
 <meta content="website" property="og:type"/>
 <meta content="EBEX | Soluções em Engenharia" property="og:title"/>
 <meta content="Projetos de engenharia que saem do papel e fazem sentido na operação." property="og:description"/>
-<meta content="https://ebexengenharia.github.io/ebex-site/og-image.jpg" property="og:image"/>
+<meta content="https://ebexengenharia.github.io/ebex-site/og-ebex.jpg" property="og:image"/>
 <meta content="image/jpeg" property="og:image:type"/>
 <meta content="1200" property="og:image:width"/>
 <meta content="630" property="og:image:height"/>
-<meta content="Projeto industrial desenvolvido pela EBEX - Soluções em Engenharia" property="og:image:alt"/>
+<meta content="Logo EBEX - Soluções em Engenharia" property="og:image:alt"/>
 <meta content="https://ebexengenharia.github.io/ebex-site/" property="og:url"/>
 <link href="https://ebexengenharia.github.io/ebex-site/" rel="canonical"/>
 <link rel="icon" type="image/png" href="favicon.png"/>
@@ -24,7 +24,7 @@
 <meta content="summary_large_image" name="twitter:card"/>
 <meta content="EBEX | Soluções em Engenharia" name="twitter:title"/>
 <meta content="Projetos de engenharia que saem do papel e fazem sentido na operação." name="twitter:description"/>
-<meta content="https://ebexengenharia.github.io/ebex-site/og-image.jpg" name="twitter:image"/>
+<meta content="https://ebexengenharia.github.io/ebex-site/og-ebex.jpg" name="twitter:image"/>
 <link href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA2NCA2NCI+PHJlY3Qgd2lkdGg9IjY0IiBoZWlnaHQ9IjY0IiByeD0iMTAiIGZpbGw9IiMwZDBlMTIiLz48cGF0aCBkPSJNMTUgMTRoMzZ2OUgyNXY3aDIzdjhIMjV2OGgyN3Y5SDE1eiIgZmlsbD0iIzY3YjgyZSIvPjwvc3ZnPg==" rel="icon" type="image/svg+xml"/>
 <style>
 :root {
@@ -145,10 +145,10 @@ a:focus-visible { outline:3px solid var(--green-dark); outline-offset:4px; }
 
 .project-grid { display:grid; grid-template-columns:repeat(6,1fr); gap:18px; }
 .project-card { position:relative; overflow:hidden; border:1px solid #cfd4d0; background:#fff; grid-column:span 3; }
-.project-card.wide { grid-column:span 6; }
+.project-card.wide { grid-column:span 6; width:min(100%, 1200px); justify-self:center; }
 .project-card.third { grid-column:span 2; }
 .project-card img { width:100%; height:400px; object-fit:cover; transition:transform .45s ease; }
-.project-card.wide img { height:430px; object-position:center 48%; }
+.project-card.wide img { height:auto; object-fit:contain; }
 .project-card.third img { height:300px; }
 .project-card:hover img { transform:scale(1.015); }
 .project-title { position:absolute; left:0; right:0; bottom:0; min-height:54px; display:flex; align-items:center; padding:0 22px; background:rgba(14,15,20,.91); color:#fff; font-size:17px; font-weight:700; }

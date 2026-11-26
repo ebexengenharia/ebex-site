@@ -1,0 +1,16 @@
+.editorial + .editorial {border-top:1px solid var(--line);background:var(--paper)}
+.projects {display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,285px),1fr));gap:clamp(18px,2vw,32px);align-items:stretch}
+.project,.buy {margin:0;border:1px solid var(--line);background:white;color:var(--ink);min-width:0}
+.project>a {display:block;background:white;cursor:zoom-in}
+.project img {display:block;width:100%;height:clamp(210px,19vw,310px);object-fit:contain}
+.project figcaption,.buy {padding:clamp(20px,2.3vw,36px)}
+.projects h3 {margin:.4em 0;font-size:clamp(22px,2vw,30px);line-height:1.12}
+.projects p,.projects dd {font-size:17px;line-height:1.55;color:#445149;margin:0}
+.projects small,.projects dt,.projects caption {color:var(--green);font-weight:700}
+.projects figcaption p a {display:inline-block;color:var(--green);text-decoration:underline}
+.projects table {width:100%;border-collapse:collapse;margin-top:20px;font-size:16px}
+.projects caption {text-align:left;margin-bottom:8px}
+.projects td,.projects th {text-align:left;padding:8px 4px;border-bottom:1px solid var(--line)}
+.projects dt {margin:20px 0 4px}
+#oficina .project img {padding:20px;height:220px}
+@media(max-width:820px){.nav{flex-wrap:wrap;gap:8px 18px}.nav a{white-space:nowrap}}

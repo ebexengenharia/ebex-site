@@ -1,0 +1,351 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1" name="viewport">
+<title>Alimentação de cavaco e geração de gás quente | EBEX Engenharia</title>
+<meta content="Projetamos a movimentação da biomassa e sua integração ao queimador, considerando a forma de abastecimento e as instalações existentes." name="description">
+<meta content="index, follow" name="robots">
+<meta content="#00683e" name="theme-color">
+<meta content="website" property="og:type">
+<meta content="Alimentação de cavaco e geração de gás quente. | EBEX Engenharia" property="og:title">
+<meta content="Projetamos a movimentação da biomassa e sua integração ao queimador, considerando a forma de abastecimento e as instalações existentes." property="og:description">
+<meta content="https://ebexengenharia.com.br/assets/layout.jpg" property="og:image">
+<meta content="https://ebexengenharia.com.br/biomassa.html" property="og:url">
+<link href="https://ebexengenharia.com.br/biomassa.html" rel="canonical">
+<meta content="pt_BR" property="og:locale">
+<meta content="summary_large_image" name="twitter:card">
+<link rel="icon" type="image/svg+xml" href="assets/ebex-simbolo.svg">
+<style>
+:root {
+  --green: #00683e;
+  --green-strong: #54a91f;
+  --green-dark: #3c7f18;
+  --ink: #0d0f0f;
+  --dark: #0e0f14;
+  --paper: #f8faf8;
+  --paper-2: #f2f5f2;
+  --muted: #5d645f;
+  --line: #d7ddd8;
+  --max: 1530px;
+  --shadow: 0 16px 44px rgba(55, 122, 22, .14);
+}
+
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body {
+  margin: 0;
+  color: var(--ink);
+  background: var(--paper);
+  font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+img { display:block; max-width:100%; }
+a { color: inherit; text-decoration: none; }
+button, a { -webkit-tap-highlight-color: transparent; }
+.container { width: min(calc(100% - 48px), var(--max)); margin-inline: auto; }
+
+.site-header {
+  height: 86px;
+  display:flex;
+  align-items:center;
+  border-bottom:1px solid var(--line);
+  background:rgba(248,250,248,.96);
+}
+.header-inner { display:flex; align-items:center; justify-content:space-between; gap:36px; }
+.brand { width:195px; flex:0 0 auto; }
+.brand img { width:195px; height:auto; }
+.header-actions { display:flex; align-items:center; gap:34px; }
+.nav { display:flex; align-items:center; gap:34px; font-size:17px; font-weight:600; }
+.nav a { transition:color .18s ease; }
+.nav a:hover { color:var(--green-dark); }
+
+.btn {
+  min-height:48px;
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  gap:11px;
+  padding:0 25px;
+  border:1px solid transparent;
+  border-radius:5px;
+  font-size:16px;
+  font-weight:650;
+  line-height:1;
+  transition:transform .18s ease, box-shadow .18s ease, background .18s ease;
+}
+.btn:hover { transform:translateY(-1px); }
+.btn-green { background:var(--green); box-shadow:var(--shadow); }
+.btn-green:hover { background:var(--green-strong); }
+.btn-dark { background:var(--dark); color:#fff; }
+.btn-dark:hover { background:#17191f; }
+.btn-lg { min-height:58px; padding-inline:31px; font-size:18px; }
+.icon { width:20px; height:20px; flex:0 0 auto; }
+
+.hero {
+  position:relative;
+  overflow:hidden;
+  padding:86px 0 80px;
+  border-bottom:1px solid var(--line);
+  background-color:#f8faf8;
+  background-image:
+    linear-gradient(to right, rgba(18,45,21,.045) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(18,45,21,.045) 1px, transparent 1px);
+  background-size:58px 58px;
+}
+.hero-grid { display:grid; grid-template-columns:minmax(0,.96fr) minmax(500px,1.04fr); gap:70px; align-items:center; }
+.eyebrow { display:flex; align-items:center; gap:15px; margin:0 0 24px; color:#4d9226; font-size:14px; font-weight:800; text-transform:uppercase; }
+.eyebrow::before { content:""; width:48px; height:1px; background:var(--green); }
+.hero h1 { margin:0; max-width:720px; font-size:clamp(48px,4.25vw,70px); line-height:.98; letter-spacing:-.045em; }
+.hero-copy { max-width:720px; margin:32px 0 34px; color:var(--muted); font-size:20px; line-height:1.65; }
+.hero-media { border:1px solid #cfd4d0; background:#fff; }
+.hero-media img { display:block; width:100%; height:auto; aspect-ratio:auto; object-fit:contain; object-position:center; }
+.media-caption { display:flex; justify-content:space-between; align-items:center; gap:20px; min-height:54px; padding:0 23px; background:rgba(14,15,20,.94); color:#fff; font-weight:700; }
+.media-caption span:last-child { color:var(--green); font-size:13px; font-family:ui-monospace, SFMono-Regular, Menlo, monospace; text-transform:uppercase; }
+
+.section { padding:82px 0; }
+.section-head { margin-bottom:52px; }
+.section-head h2 { margin:0 0 18px; font-size:clamp(38px,3.1vw,54px); letter-spacing:-.035em; line-height:1.05; }
+.section-head p { margin:0; color:var(--muted); font-size:19px; line-height:1.6; }
+
+.services { background:var(--paper-2); }
+.service-grid { display:grid; grid-template-columns:repeat(4,1fr); border:1px solid var(--line); background:var(--paper); }
+.service-card { min-height:300px; padding:43px 36px; border-right:1px solid var(--line); }
+.service-card:last-child { border-right:0; }
+.service-n { display:block; margin-bottom:30px; color:var(--green-dark); font:600 15px ui-monospace, SFMono-Regular, Menlo, monospace; }
+.service-card h3 { margin:0 0 19px; font-size:22px; line-height:1.35; }
+.service-card p { margin:0; color:var(--muted); font-size:17px; line-height:1.65; }
+
+.statement { padding:70px 0 76px; background:var(--dark); text-align:center; color:#fff; }
+.statement h2 { max-width:800px; margin:0 auto 26px; font-size:clamp(44px,4vw,66px); line-height:.96; letter-spacing:-.04em; }
+.statement p { max-width:1100px; margin:0 auto; color:var(--green); font-size:clamp(22px,2vw,31px); line-height:1.35; }
+
+.experience { padding-top:86px; }
+.experience-top { display:grid; grid-template-columns:.9fr 1.1fr; gap:70px; align-items:end; margin-bottom:28px; }
+.small-label { margin:0 0 18px; color:#3f8420; font-size:14px; font-weight:800; text-transform:uppercase; }
+.experience h2 { max-width:620px; margin:0; font-size:clamp(40px,3.2vw,58px); line-height:1.05; letter-spacing:-.035em; }
+.metrics { display:grid; grid-template-columns:1fr 1fr; border:1px solid var(--line); }
+.metric { min-height:172px; padding:30px; }
+.metric + .metric { border-left:1px solid var(--line); }
+.metric strong { display:block; color:#3f8420; font-size:42px; line-height:1; margin-bottom:18px; }
+.metric span { color:var(--muted); font-size:16px; line-height:1.5; }
+.sectors { margin:28px 0 46px; padding-left:20px; border-left:2px solid var(--green); color:var(--muted); font-size:16px; line-height:1.65; }
+
+.project-grid { display:grid; grid-template-columns:repeat(6,1fr); gap:18px; }
+.project-card { position:relative; overflow:hidden; border:1px solid #cfd4d0; background:#fff; grid-column:span 3; }
+.project-card.wide { grid-column:span 6; }
+.project-card.third { grid-column:span 2; }
+.project-card img { width:100%; height:400px; object-fit:cover; transition:transform .45s ease; }
+.project-card.wide img { height:430px; }
+.project-card.third img { height:300px; }
+.project-card:hover img { transform:scale(1.015); }
+.project-title { position:absolute; left:0; right:0; bottom:0; min-height:54px; display:flex; align-items:center; padding:0 22px; background:rgba(14,15,20,.91); color:#fff; font-size:17px; font-weight:700; }
+.project-card.contain img { object-fit:contain; padding:26px; background:#fff; }
+.project-note { margin:27px 0 0; color:var(--muted); font-size:14px; line-height:1.55; }
+
+.process { border-top:1px solid var(--line); background:var(--paper-2); }
+.process-intro { max-width:830px; }
+.process-grid { display:grid; grid-template-columns:repeat(4,1fr); gap:30px; margin-top:48px; }
+.process-step { padding-top:27px; border-top:2px solid var(--green); }
+.process-step span { display:block; margin-bottom:18px; color:var(--green-dark); font:700 14px ui-monospace, SFMono-Regular, Menlo, monospace; }
+.process-step h3 { margin:0 0 12px; font-size:22px; }
+.process-step p { margin:0; color:var(--muted); font-size:15px; line-height:1.55; }
+
+.cta { background:var(--green); padding:68px 0 58px; }
+.cta-top { display:grid; grid-template-columns:1.25fr .75fr; gap:60px; align-items:center; }
+.cta h2 { max-width:780px; margin:0 0 18px; font-size:clamp(40px,3.4vw,60px); line-height:1.05; letter-spacing:-.035em; }
+.cta p { margin:0; font-size:18px; }
+.cta-action { justify-self:end; }
+.contact-strip { display:flex; flex-wrap:wrap; gap:28px 45px; margin-top:50px; padding-top:28px; border-top:1px solid rgba(12,13,15,.22); }
+.contact-link { display:inline-flex; align-items:center; gap:10px; font-size:16px; }
+.contact-link:hover { text-decoration:underline; text-underline-offset:4px; }
+
+.footer { background:var(--dark); color:#fff; padding:48px 0 50px; }
+.footer-grid { display:grid; grid-template-columns:1fr 1fr 1fr; gap:40px; align-items:start; }
+.footer-brand { color:var(--green); font-size:29px; font-weight:800; }
+.footer p { margin:10px 0 0; color:#c6cbc8; line-height:1.6; }
+.footer-right { text-align:right; }
+.footer a:hover { color:#fff; }
+
+.floating-wa {
+  position:fixed;
+  right:26px;
+  bottom:24px;
+  z-index:50;
+  width:68px;
+  height:68px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  border-radius:50%;
+  background:#25d366;
+  color:#fff;
+  box-shadow:0 14px 38px rgba(0,0,0,.18);
+  transition:transform .18s ease, background .18s ease;
+}
+.floating-wa:hover { transform:translateY(-3px) scale(1.02); background:#20bd5a; }
+.floating-wa svg { width:32px; height:32px; display:block; }
+
+@media (max-width: 1150px) {
+  .hero-grid { grid-template-columns:1fr; gap:48px; }
+  .hero-copy { max-width:820px; }
+  .hero-media { max-width:900px; }
+  .service-grid { grid-template-columns:1fr 1fr; }
+  .service-card { border-bottom:1px solid var(--line); }
+  .service-card:nth-child(2) { border-right:0; }
+  .service-card:nth-child(3), .service-card:nth-child(4) { border-bottom:0; }
+  .experience-top { grid-template-columns:1fr; }
+  .metrics { max-width:800px; }
+}
+
+@media (max-width: 820px) {
+  .container { width:min(calc(100% - 30px), var(--max)); }
+  .site-header { height:74px; }
+  .brand, .brand img { width:155px; }
+  .nav { display:none; }
+  .header-actions { gap:14px; }
+  .header-actions .btn { min-height:43px; padding:0 16px; font-size:14px; }
+  .hero { padding:58px 0 56px; background-size:42px 42px; }
+  .hero h1 { font-size:clamp(42px,12vw,60px); }
+  .hero-copy { margin-top:24px; font-size:18px; }
+  .btn-lg { width:100%; }
+  .section { padding:62px 0; }
+  .service-grid { grid-template-columns:1fr; }
+  .service-card { min-height:auto; border-right:0; border-bottom:1px solid var(--line) !important; }
+  .service-card:last-child { border-bottom:0 !important; }
+  .statement { padding:58px 0 62px; }
+  .experience-top { gap:36px; }
+  .metrics { grid-template-columns:1fr; }
+  .metric + .metric { border-left:0; border-top:1px solid var(--line); }
+  .project-grid { grid-template-columns:1fr; gap:14px; }
+  .project-card, .project-card.wide, .project-card.third { grid-column:auto; }
+  .project-card img, .project-card.wide img, .project-card.third img { height:auto; max-height:420px; aspect-ratio:16/10; }
+  .project-card.contain img { max-height:360px; }
+  .process-grid { grid-template-columns:1fr 1fr; }
+  .cta-top { grid-template-columns:1fr; gap:34px; }
+  .cta-action { justify-self:stretch; }
+  .cta-action .btn { width:100%; }
+  .contact-strip { gap:18px 28px; }
+  .footer-grid { grid-template-columns:1fr; gap:26px; }
+  .footer-right { text-align:left; }
+  .floating-wa { right:18px; bottom:18px; width:60px; height:60px; }
+}
+
+@media (max-width: 520px) {
+  .header-actions .btn span { display:none; }
+  .header-actions .btn { width:44px; padding:0; }
+  .media-caption { padding-inline:15px; font-size:13px; }
+  .media-caption span:last-child { display:none; }
+  .section-head { margin-bottom:36px; }
+  .process-grid { grid-template-columns:1fr; }
+  .contact-strip { flex-direction:column; gap:15px; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior:auto; }
+  *, *::before, *::after { transition:none !important; animation:none !important; }
+}
+
+
+:root{--green:#00683e;--green-strong:#005431;--green-dark:#00683e;--ink:#172b22;--dark:#172b22;--paper:#fff;--paper-2:#f1f5f2;--shadow:none}
+.site-header{background:white}.brand,.brand img{width:145px}.btn-green,.cta{color:white}.eyebrow,.small-label{color:var(--green)}.media-caption{background:#172b22}.media-caption span:last-child,.statement p{color:#d6edcf}.hero-media{margin:0}.hero-media img{aspect-ratio:1.65;object-fit:contain}.nav a[aria-current]{color:var(--green-dark);text-decoration:underline;text-underline-offset:7px}.footer-logo{width:124px;background:white;padding:7px}.contact-link{color:inherit}.case-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,280px),1fr));gap:26px}.case-grid article{background:white;border:1px solid var(--line)}.case-grid img{width:100%;height:230px;object-fit:contain;background:#f8faf8}.case-grid article div{padding:24px}.case-grid h3{margin:0 0 10px;font-size:24px}.case-grid p{margin:0;color:var(--muted);line-height:1.6}.case-grid a{color:#00683e;text-decoration:underline}.cta .contact-link{color:white}.hero:after{content:"";position:absolute;right:-10px;top:0;width:92px;height:9px;transform:skewX(-36deg);background:#00683e;border-left:6px solid #80b95f;pointer-events:none}
+@media(max-width:820px){.site-header{height:auto;padding:12px 0}.header-inner{flex-wrap:wrap;gap:10px}.header-actions{display:contents}.header-actions>.btn{margin-left:auto}.nav{display:flex;order:3;width:100%;gap:24px;border-top:1px solid var(--line);padding:10px 0 1px;font-size:16px}.brand,.brand img{width:116px}.hero-grid{grid-template-columns:minmax(0,1fr)}.header-actions .btn span{display:inline}.header-actions .btn{width:auto;padding:0 14px}}
+</style>
+<link rel="stylesheet" href="projetos.css">
+</head>
+<body>
+<header class="site-header">
+<div class="container header-inner">
+<span class="brand">
+<img alt="EBEX Engenharia" height="190" src="assets/ebex.png" width="760">
+</span>
+<div class="header-actions">
+
+<a aria-label="Falar com a EBEX pelo WhatsApp" class="btn btn-green" href="https://wa.me/5547991972105?text=Ol%C3%A1%2C%20vim%20pelo%20site%20da%20EBEX%20e%20gostaria%20de%20conversar%20sobre%20um%20projeto." rel="noopener" target="_blank">
+<span>WhatsApp</span>
+<svg aria-hidden="true" class="icon" fill="none" viewbox="0 0 24 24"><path d="M7 17 17 7M9 7h8v8" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8"></path></svg>
+</a>
+</div>
+</div>
+</header>
+<main><section class="hero" id="inicio">
+<div class="container hero-grid">
+<div>
+<p class="eyebrow">Biomassa</p>
+<h1>Alimentação de cavaco e geração de gás quente.</h1>
+<p class="hero-copy">Projetamos a movimentação da biomassa e sua integração ao queimador, considerando a forma de abastecimento e as instalações existentes.</p>
+<a class="btn btn-green btn-lg" href="https://wa.me/5547991972105?text=Ol%C3%A1%2C%20vim%20pelo%20site%20da%20EBEX%20e%20gostaria%20de%20conversar%20sobre%20um%20projeto." rel="noopener" target="_blank">
+<svg aria-hidden="true" class="icon" fill="currentColor" viewbox="0 0 16 16"><path d="M13.601 2.326A7.85 7.85 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.93 7.93 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93a7.9 7.9 0 0 0-2.327-5.607M7.994 14.521a6.6 6.6 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.25a6.56 6.56 0 0 1-1.007-3.505c0-3.633 2.957-6.59 6.594-6.59a6.55 6.55 0 0 1 4.66 1.931 6.56 6.56 0 0 1 1.928 4.66c-.004 3.639-2.961 6.597-6.595 6.597m3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.066-.315-.099-.445.099-.132.197-.511.646-.627.778-.116.132-.231.148-.429.05-.197-.1-.836-.308-1.591-.981-.588-.525-.985-1.173-1.1-1.371-.116-.198-.012-.305.087-.403.09-.09.198-.231.297-.347.1-.116.132-.198.198-.33.066-.132.033-.248-.017-.347-.05-.099-.445-1.073-.61-1.47-.16-.389-.323-.336-.445-.342l-.379-.007a.73.73 0 0 0-.528.248c-.182.198-.693.677-.693 1.654s.71 1.916.81 2.049c.099.132 1.397 2.132 3.383 2.992.473.203.842.324 1.13.415.475.151.907.13 1.248.079.38-.057 1.17-.479 1.336-.942.165-.462.165-.858.116-.942-.05-.083-.182-.132-.38-.23"></path></svg>
+            Falar com a EBEX pelo WhatsApp
+            <svg aria-hidden="true" class="icon" fill="none" viewbox="0 0 24 24"><path d="M7 17 17 7M9 7h8v8" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8"></path></svg>
+</a>
+</div>
+<figure class="hero-media"><img fetchpriority="high" src="assets/layout.jpg" alt="Render do layout de movimentação de biomassa"><figcaption class="media-caption"><span>Layout de movimentação da biomassa</span><span>Render de apresentação</span></figcaption></figure>
+</div>
+</section><section class="section editorial"><div class="container"><header class="section-head"><h2>Alimentação de cavaco em campo</h2><p>O sistema precisava alimentar um queimador para gerar gás quente. Em experiência profissional anterior à EBEX, Gustavo Campos participou do projeto e acompanhou a fabricação, a montagem e a partida.</p></header><div class="projects"><figure class="project"><a href="assets/civil.jpg" aria-label="Ampliar imagem: Conferência da obra civil"><img src="assets/civil.jpg" alt="Conferência da obra civil" loading="lazy"></a><figcaption><small>Execução</small><h3>Conferência da obra civil</h3><p>Vista das fundações durante a preparação da instalação.</p></figcaption></figure>
+<figure class="project"><a href="assets/alimentador.jpg" aria-label="Ampliar imagem: Sistema de alimentação instalado"><img src="assets/alimentador.jpg" alt="Sistema de alimentação instalado" loading="lazy"></a><figcaption><small>Montagem</small><h3>Sistema de alimentação instalado</h3><p>Vista do conjunto de alimentação junto à edificação, também apresentada no portfólio.</p></figcaption></figure>
+<figure class="project"><a href="assets/partida.jpg" aria-label="Ampliar imagem: Vista geral da instalação"><img src="assets/partida.jpg" alt="Vista geral da instalação" loading="lazy"></a><figcaption><small>Campo</small><h3>Vista geral da instalação</h3><p>O registro da etapa de montagem e partida mostra a relação entre os equipamentos e a estrutura da planta.</p></figcaption></figure></div></div></section><section class="section editorial"><div class="container"><header class="section-head"><h2>Outras aplicações em biomassa</h2></header><div class="projects"><figure class="project"><a href="assets/moega.webp" aria-label="Ampliar imagem: Integração à fornalha existente"><img src="assets/moega.webp" alt="Integração à fornalha existente" loading="lazy"></a><figcaption><small>Estudo demonstrativo</small><h3>Integração à fornalha existente</h3><p>Estudo de arranjo para aproveitar a fornalha e os desfagulhadores existentes, considerando a posição da moega e a forma de abastecimento.</p></figcaption></figure>
+<figure class="project"><a href="assets/queimador.webp" aria-label="Ampliar imagem: Queimador de pequeno porte"><img src="assets/queimador.webp" alt="Queimador de pequeno porte" loading="lazy"></a><figcaption><small>Projeto contratado</small><h3>Queimador de pequeno porte</h3><p>O cliente recebeu o projeto e a lista de materiais para cotar a fabricação e formar o preço de venda. O escopo foi concluído na etapa de projeto.</p></figcaption></figure></div></div></section><section class="section process" id="processo">
+<div class="container">
+<header class="section-head process-intro">
+<h2>Como a EBEX pode ajudar</h2>
+<p>A EBEX pode atuar desde a concepção e desenvolvimento até o detalhamento e suporte à implementação, conforme o escopo contratado.</p>
+</header>
+<div class="process-grid">
+<article class="process-step"><span>01</span><h3>Entender</h3><p>Levantar a necessidade, as restrições do processo e os requisitos técnicos.</p></article>
+<article class="process-step"><span>02</span><h3>Desenvolver</h3><p>Transformar o problema em uma solução de engenharia aplicável e fabricável.</p></article>
+<article class="process-step"><span>03</span><h3>Detalhar</h3><p>Preparar modelos, desenhos, listas e especificações para execução.</p></article>
+<article class="process-step"><span>04</span><h3>Implementar</h3><p>Apoiar fabricação, montagem, ajustes e início de operação quando previsto.</p></article>
+</div>
+</div>
+</section><section class="cta" id="contato">
+<div class="container">
+<div class="cta-top">
+<div>
+<h2>Tem um equipamento, estrutura ou projeto para desenvolver?</h2>
+<p>Conte brevemente o que você precisa. Vamos entender a solução.</p>
+</div>
+<div class="cta-action">
+<a class="btn btn-dark btn-lg" href="https://wa.me/5547991972105?text=Ol%C3%A1%2C%20vim%20pelo%20site%20da%20EBEX%20e%20gostaria%20de%20conversar%20sobre%20um%20projeto." rel="noopener" target="_blank">
+<svg aria-hidden="true" class="icon" fill="currentColor" viewbox="0 0 16 16"><path d="M13.601 2.326A7.85 7.85 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.93 7.93 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93a7.9 7.9 0 0 0-2.327-5.607M7.994 14.521a6.6 6.6 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.25a6.56 6.56 0 0 1-1.007-3.505c0-3.633 2.957-6.59 6.594-6.59a6.55 6.55 0 0 1 4.66 1.931 6.56 6.56 0 0 1 1.928 4.66c-.004 3.639-2.961 6.597-6.595 6.597m3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.066-.315-.099-.445.099-.132.197-.511.646-.627.778-.116.132-.231.148-.429.05-.197-.1-.836-.308-1.591-.981-.588-.525-.985-1.173-1.1-1.371-.116-.198-.012-.305.087-.403.09-.09.198-.231.297-.347.1-.116.132-.198.198-.33.066-.132.033-.248-.017-.347-.05-.099-.445-1.073-.61-1.47-.16-.389-.323-.336-.445-.342l-.379-.007a.73.73 0 0 0-.528.248c-.182.198-.693.677-.693 1.654s.71 1.916.81 2.049c.099.132 1.397 2.132 3.383 2.992.473.203.842.324 1.13.415.475.151.907.13 1.248.079.38-.057 1.17-.479 1.336-.942.165-.462.165-.858.116-.942-.05-.083-.182-.132-.38-.23"></path></svg>
+              Falar com a EBEX pelo WhatsApp
+              <svg aria-hidden="true" class="icon" fill="none" viewbox="0 0 24 24"><path d="M7 17 17 7M9 7h8v8" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8"></path></svg>
+</a>
+</div>
+</div>
+<div class="contact-strip">
+<a aria-label="WhatsApp da EBEX" class="contact-link" href="https://wa.me/5547991972105" rel="noopener" target="_blank">
+<svg aria-hidden="true" class="icon" fill="currentColor" viewbox="0 0 16 16"><path d="M13.601 2.326A7.85 7.85 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.93 7.93 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93a7.9 7.9 0 0 0-2.327-5.607M7.994 14.521a6.6 6.6 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.25a6.56 6.56 0 0 1-1.007-3.505c0-3.633 2.957-6.59 6.594-6.59a6.55 6.55 0 0 1 4.66 1.931 6.56 6.56 0 0 1 1.928 4.66c-.004 3.639-2.961 6.597-6.595 6.597m3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.066-.315-.099-.445.099-.132.197-.511.646-.627.778-.116.132-.231.148-.429.05-.197-.1-.836-.308-1.591-.981-.588-.525-.985-1.173-1.1-1.371-.116-.198-.012-.305.087-.403.09-.09.198-.231.297-.347.1-.116.132-.198.198-.33.066-.132.033-.248-.017-.347-.05-.099-.445-1.073-.61-1.47-.16-.389-.323-.336-.445-.342l-.379-.007a.73.73 0 0 0-.528.248c-.182.198-.693.677-.693 1.654s.71 1.916.81 2.049c.099.132 1.397 2.132 3.383 2.992.473.203.842.324 1.13.415.475.151.907.13 1.248.079.38-.057 1.17-.479 1.336-.942.165-.462.165-.858.116-.942-.05-.083-.182-.132-.38-.23"></path></svg>
+            (47) 99197-2105
+          </a>
+<a class="contact-link" href="mailto:gustavo@ebexengenharia.com.br">
+<svg aria-hidden="true" class="icon" fill="none" viewbox="0 0 24 24"><path d="M4 6h16v12H4zM4 7l8 6 8-6" stroke="currentColor" stroke-linejoin="round" stroke-width="1.7"></path></svg>
+            gustavo@ebexengenharia.com.br
+          </a>
+<span class="contact-link">
+<svg aria-hidden="true" class="icon" fill="none" viewbox="0 0 24 24"><path d="M12 21s6-5.1 6-11a6 6 0 1 0-12 0c0 5.9 6 11 6 11Z" stroke="currentColor" stroke-width="1.7"></path><circle cx="12" cy="10" r="2" stroke="currentColor" stroke-width="1.7"></circle></svg>
+            Pouso Redondo/SC
+          </span>
+</div>
+</div>
+</section></main>
+<footer class="footer">
+<div class="container footer-grid">
+<div><img class="footer-logo" src="assets/ebex.png" alt="EBEX Engenharia"><p><span>www.ebexengenharia.com.br</span></p></div>
+<div><p>Gustavo Campos<br>Pouso Redondo — SC<br><a href="https://wa.me/5547991972105" rel="noopener" target="_blank">WhatsApp: (47) 99197-2105</a><br><a href="mailto:gustavo@ebexengenharia.com.br">gustavo@ebexengenharia.com.br</a></p></div>
+<div class="footer-right"><p>CNPJ: 48.339.146/0001-92<br>CREA/SC: 226686-0<br>© <span data-year="">2026</span> EBEX — Soluções em Engenharia</p></div>
+</div>
+</footer>
+<a aria-label="Falar com a EBEX pelo WhatsApp" class="floating-wa" href="https://wa.me/5547991972105?text=Ol%C3%A1%2C%20vim%20pelo%20site%20da%20EBEX%20e%20gostaria%20de%20conversar%20sobre%20um%20projeto." rel="noopener" target="_blank" title="Falar com a EBEX pelo WhatsApp">
+<svg aria-hidden="true" fill="currentColor" viewbox="0 0 16 16"><path d="M13.601 2.326A7.85 7.85 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.93 7.93 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93a7.9 7.9 0 0 0-2.327-5.607M7.994 14.521a6.6 6.6 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.25a6.56 6.56 0 0 1-1.007-3.505c0-3.633 2.957-6.59 6.594-6.59a6.55 6.55 0 0 1 4.66 1.931 6.56 6.56 0 0 1 1.928 4.66c-.004 3.639-2.961 6.597-6.595 6.597m3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.066-.315-.099-.445.099-.132.197-.511.646-.627.778-.116.132-.231.148-.429.05-.197-.1-.836-.308-1.591-.981-.588-.525-.985-1.173-1.1-1.371-.116-.198-.012-.305.087-.403.09-.09.198-.231.297-.347.1-.116.132-.198.198-.33.066-.132.033-.248-.017-.347-.05-.099-.445-1.073-.61-1.47-.16-.389-.323-.336-.445-.342l-.379-.007a.73.73 0 0 0-.528.248c-.182.198-.693.677-.693 1.654s.71 1.916.81 2.049c.099.132 1.397 2.132 3.383 2.992.473.203.842.324 1.13.415.475.151.907.13 1.248.079.38-.057 1.17-.479 1.336-.942.165-.462.165-.858.116-.942-.05-.083-.182-.132-.38-.23"></path></svg>
+</a>
+<script>
+(() => {
+  const year = document.querySelector('[data-year]');
+  if (year) year.textContent = new Date().getFullYear();
+})();
+
+</script>
+</body>
+</html>

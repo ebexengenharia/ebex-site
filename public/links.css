@@ -33,9 +33,16 @@ body::before {
 
 .intro { margin-bottom: 1.65rem; }
 
-.intro img {
+.home-logo {
   display: block;
   width: min(10.75rem, 75%);
+}
+
+.home-logo:focus-visible { outline: .2rem solid var(--green); outline-offset: .2rem; }
+
+.intro img {
+  display: block;
+  width: 100%;
   height: auto;
 }
 

@@ -13,4 +13,42 @@
 .projects td,.projects th {text-align:left;padding:8px 4px;border-bottom:1px solid var(--line)}
 .projects dt {margin:20px 0 4px}
 #oficina .project img {padding:20px;height:220px}
-@media(max-width:820px){.nav{flex-wrap:wrap;gap:8px 18px}.nav a{white-space:nowrap}}
+
+.footer-home { display: inline-block; }
+.brand:focus-visible,
+.nav a:focus-visible { outline: 2px solid var(--green); outline-offset: 3px; }
+.footer-home:focus-visible { outline: 2px solid #80b95f; outline-offset: 3px; }
+
+@media (max-width: 820px) {
+  .nav {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    align-items: stretch;
+    gap: 8px;
+  }
+
+  .nav a {
+    display: grid;
+    place-items: center;
+    min-height: 44px;
+    padding: 6px;
+    border: 1px solid var(--line);
+    border-radius: 5px;
+    font-size: 15px;
+    line-height: 1.2;
+    text-align: center;
+  }
+
+  .nav a:hover,
+  .nav a[aria-current="page"] {
+    border-color: var(--green);
+    background: var(--paper-2);
+    color: var(--green);
+  }
+
+  .nav a[aria-current="page"] { text-underline-offset: 3px; }
+}
+
+@media (max-width: 520px) {
+  .nav { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
